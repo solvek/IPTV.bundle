@@ -114,5 +114,3 @@ http://192.168.0.1:4000/udp/226.226.2.4:1234
 http://192.168.0.1:4000/udp/226.226.2.3:1234
 #EXTINF:-1 group-title="Proline2", ЭКО-ТВ
 http://192.168.0.1:4000/udp/226.226.2.21:1234
-#EXTINF:-1 group-title="Home", Home Camera
-rtsp://user:Qaz876fg@192.168.0.100:554/0
