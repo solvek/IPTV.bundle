@@ -39,7 +39,7 @@ Included sample playlist is for testing purposes only, some streams might be dea
   * [HasBahCaIPTV.com](http://hasbahcaiptv.com/index.php?dir=m3u)
   * [IPTV-Tv.blogspot.com](http://iptv-tv.blogspot.com)
   * [TvOnlineStreams.com](http://www.tvonlinestreams.com)
-  * [Plex forums](https://forums.plex.tv/index.php/topic/83083-iptvbundle-plugin-that-plays-iptv-streams-from-a-m3u-playlist/)
+  * [Plex forums](http://forums.plex.tv/discussion/83083/rel-iptv-bundle-plugin-that-plays-iptv-streams-from-a-m3u-playlist/p1)
   * [Google.com](http://lmgtfy.com/?q=iptv+m3u)
 
 Playlist supports additional attributes that can be optionally defined inline after #EXTINF:0 and before the name of the media:
@@ -60,7 +60,7 @@ http://80.87.146.133:1111/udp/230.3.3.115:5678
 Read further for more information about [supported protocols and required configurations][5].
 
 ### Compatible devices and limitations ###
-It is a [known](http://forums.plexapp.com/index.php/topic/84637-problems-getting-live-http-stream-into-channel/?p=488511) [fact](https://forums.plexapp.com/index.php/topic/82477-reanimating-kartinatv-plugin-just-started-with-plex/?p=475261) that Plex Media Server does not transcode live streams and leaves this job for clients and streaming sources, so streams **will play only on clients that are able to handle the stream natively**:
+It is a [known](http://forums.plex.tv/discussion/84637/problems-getting-live-http-stream-into-channel) [fact](https://forums.plexapp.com/index.php/topic/82477-reanimating-kartinatv-plugin-just-started-with-plex/?p=475261) that Plex Media Server does not transcode live streams and leaves this job for clients and streaming sources, so streams **will play only on clients that are able to handle the stream natively**:
 
 * **Desktop Clients**:
   * **[Plex Media Center]** - no longer in production but you can get one from ~~[old Plex Wiki page](https://oldwiki.plexapp.com/index.php?title=Downloads#Plex_Media_Center_.28PMC_-_standalone_client.29)~~  [Plex Downloads Archive][Plex Media Center] or [download.cnet.com](http://download.cnet.com/Plex-Media-Center/3000-2139_4-75754342.html), plays [most streams][5] without problems, latest known version 0.9.5.4;
@@ -72,7 +72,7 @@ It is a [known](http://forums.plexapp.com/index.php/topic/84637-problems-getting
   * **[Plex for Roku][GetPlex]** - for some it [works](https://forums.plex.tv/index.php/topic/83083-iptvbundle-plugin-that-plays-iptv-streams-from-a-m3u-playlist/?p=502904), for some it [does not](https://forums.plex.tv/index.php/topic/83083-iptvbundle-plugin-that-plays-iptv-streams-from-a-m3u-playlist/?p=482524), [wheezycheezel](https://forums.plex.tv/index.php/user/203736-wheezycheezel/) posted [step by step guide](https://forums.plex.tv/index.php/topic/83083-iptvbundle-plugin-that-plays-iptv-streams-from-a-m3u-playlist/?p=544372) for [TVHeadend](https://tvheadend.org/) streams on [Plex forums](https://forums.plex.tv/index.php/topic/83083-iptvbundle-plugin-that-plays-iptv-streams-from-a-m3u-playlist/?p=544372), needs more [testing][6];
   * **[Plex for Chromecast][GetPlex]** - not tested;
   * **[Plex for Google TV][GetPlex]** - not tested;
-  * **[Plex for Samsung][GetPlex]** - not tested;
+  * **[Plex for Samsung][GetPlex]** - works, tested by [MACE-Zer0](https://github.com/Cigaras/IPTV.bundle/issues/29);
 * **Mobile Devices**:
   * **[Plex for Android][GetPlex]** - usualy does not work, should work with external player like [MX Player](https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.ad), needs [testing][6];
   * **[Plex for iOS][GetPlex]** - [at the moment does not play any streams at all](https://forums.plex.tv/index.php/topic/83083-iptvbundle-plugin-that-plays-iptv-streams-from-a-m3u-playlist/?p=536311);
@@ -124,7 +124,7 @@ If You encounter errors or some streams do not work please do the following:
   * on Windows: *C:\Users\USERNAME\AppData\Local\Plex Media Server\Logs\PMS Plugin Logs\*
   * on Mac: *~Library/Application Support/Plex Media Server/Logs/PMS Plugin Logs/*
 
-5. If You do not have a solution after checking the log file, submit a [ticket on GitHub](https://github.com/Cigaras/IPTV.bundle/issues/new) or post on [Plex forum](http://forums.plexapp.com/index.php/topic/83083-iptvbundle-plugin-that-plays-iptv-streams-from-a-m3u-playlist/) with log and playlist files attached and I will try to help You.
+5. If You do not have a solution after checking the log file, submit a [ticket on GitHub](https://github.com/Cigaras/IPTV.bundle/issues/new) or post on [Plex forum](http://forums.plex.tv/discussion/83083/rel-iptv-bundle-plugin-that-plays-iptv-streams-from-a-m3u-playlist/p1) with log and playlist files attached and I will try to help You.
 
 ### To do list ###
 * [EPG];
@@ -159,7 +159,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
   [8]: #credits-and-contacts "Credits and contacts"
   [9]: #license "License"
   [Changelog]: https://github.com/Cigaras/IPTV.bundle/blob/master/CHANGELOG.md
-  [Cigaras]: http://forums.plexapp.com/index.php/user/107872-cigaras
+  [Cigaras]: http://forums.plex.tv/profile/Cigaras
   [Valdas Vaitiekaitis]: https://plus.google.com/+ValdasVaitiekaitis
   [Set-top box]: http://en.wikipedia.org/wiki/Set-top_box
   [IPTV]: http://en.wikipedia.org/wiki/IPTV
