@@ -1,116 +1,31 @@
 #EXTM3U
+#EXTINF:0 group-title="News" tvg-logo="http://upload.wikimedia.org/wikipedia/en/f/fa/ABCNewsLogo.png",ABC News (http)
+http://abclive.abcnews.com/i/abc_live4@136330/index_1200_av-b.m3u8
+#EXTINF:0 tvg-logo="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Russia-today-logo.svg/240px-Russia-today-logo.svg.png",RT HD (http)
+http://rt.com/s/rtplayer/playlists/rt_global.m3u8
+#EXTINF:0 group-title="News" tvg-logo="http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Deutsche_Welle_Logo.svg/320px-Deutsche_Welle_Logo.svg.png",DW (http)
+http://dwtvios_asiaplus-i.akamaihd.net/hls/live/200521-b/dwtvasiaplus/x1x/playlist1x.m3u8
+#EXTINF:0 group-title="News",i24 Israel (http)
+http://bcoveliveios-i.akamaihd.net/hls/live/215102/master_english/398/master.m3u8
+#EXTINF:0 tvg-name="NDTV" tvg-logo="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/NDTV_logo.svg/2000px-NDTV_logo.svg.png" group-title="News",NDTV (http)
+http://bglive-a.bitgravity.com/ndtv/247hi/live/native
+#EXTINF:0 tvg-name="NDTV" tvg-logo="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/NDTV_logo.svg/2000px-NDTV_logo.svg.png" group-title="News",NDTV alternative link (http)
+http://ndtv.live.cdn.bitgravity.com/ndtv/live/ndtv247live512
+#EXTINF:0 tvg-name="Jim" tvg-logo="http://upload.wikimedia.org/wikipedia/commons/6/62/JIMlogo.png" group-title="Music",Jim (rtmp)
+rtmp://rtmp.jim.stream.vmmacdn.be/vmma-jim-rtmplive-live/jim
 #EXTINF:0 tvg-name="Sky TG24" tvg-logo="http://upload.wikimedia.org/wikipedia/en/9/91/SKY_TG24.png" group-title="News",Sky TG24 (rtmp)
 rtmp://cp49989.live.edgefcs.net:1935/live/streamRM1@2564
+#EXTINF:0 tvg-name="TPC" tvg-logo="" group-title="Entertainment",TPC (rtmp)
+rtmp://cp114761.live.edgefcs.net:443/live/tpc-live_1@44263
+#EXTINF:0 tvg-name="Vsegda s Toboy" tvg-logo="" group-title="Entertainment",Vsegda s Toboy (rtmp)
+rtmp://81.177.35.218/rtp/2
+#EXTINF:0 tvg-name="TOUR TV" tvg-logo="" group-title="Lifestyle",TOUR TV (rtmp)
+rtmp://www.planeta-online.tv:1936/live/channel_2
+#EXTINF:0 tvg-name="Sitel Tv MKD" tvg-logo="" group-title="Entertainment",Sitel Tv MKD (rtsp)
+rtsp://fms.zulu.mk/zulu/sitel_1
+#EXTINF:0 tvg-name="NOA 4 Hamburg" tvg-logo="" group-title="Entertainment",NOA 4 Hamburg (mmsh)
+mmsh://wt-wm1.wtnet.de/noa4hh-stream-hi?MSWMExt=.asf
+#EXTINF:0 tvg-name="VRF Voigtland" tvg-logo="" group-title="Entertainment",VRF Voigtland (mms)
+mms://stream.vrf.de/VRF
 #EXTINF:0 tvg-name="Lietuvos rytas TV" tvg-logo="http://upload.wikimedia.org/wikipedia/en/6/6b/Lrytas_tv_logo.svg.png" group-title="Lifestyle",Lietuvos rytas TV (rtmp plays over http)
 rtmp://live.lrtc.net:80/X8a7MmK/live
-
-#EXTINF:0 tvg-name="1+1" tvg-logo="http://media.1plus1.ua/frontend/www/uploads/speakers/1+1_844.jpg" group-title="Proline1", 1+1
-http://192.168.0.1:4000/udp/226.226.1.1:1234
-#EXTINF:-1 group-title="Proline1", 2+2
-http://192.168.0.1:4000/udp/226.226.1.3:1234
-#EXTINF:-1 group-title="Proline1", 5 канал
-http://192.168.0.1:4000/udp/226.226.1.2:1234
-#EXTINF:-1 group-title="Proline1", Business
-http://192.168.0.1:4000/udp/226.226.1.18:1234
-#EXTINF:-1 group-title="Proline1", ICTV
-http://192.168.0.1:4000/udp/226.226.1.17:1234
-#EXTINF:-1 group-title="Proline1", Інтер
-http://192.168.0.1:4000/udp/226.226.1.4:1234
-#EXTINF:-1 group-title="Proline1", К1
-http://192.168.0.1:4000/udp/226.226.1.5:1234
-#EXTINF:-1 group-title="Proline1", КРТ
-http://192.168.0.1:4000/udp/226.226.1.13:1234
-#EXTINF:-1 group-title="Proline1", М1
-http://192.168.0.1:4000/udp/226.226.1.7:1234
-#EXTINF:-1 group-title="Proline1", Новий канал
-http://192.168.0.1:4000/udp/226.226.1.9:1234
-#EXTINF:-1 group-title="Proline1", НТН
-http://192.168.0.1:4000/udp/226.226.1.10:1234
-#EXTINF:-1 group-title="Proline1", Перший національний
-http://192.168.0.1:4000/udp/226.226.1.11:1234
-#EXTINF:-1 group-title="Proline1", Плюс Плюс
-http://192.168.0.1:4000/udp/226.226.1.12:1234
-#EXTINF:-1 group-title="Proline1", СТБ
-http://192.168.0.1:4000/udp/226.226.1.14:1234
-#EXTINF:-1 group-title="Proline1", ТЕТ
-http://192.168.0.1:4000/udp/226.226.1.15:1234
-#EXTINF:-1 group-title="Proline1", Тоніс
-http://192.168.0.1:4000/udp/226.226.1.16:1234
-#EXTINF:-1 group-title="Proline1", ТРК Київ
-http://192.168.0.1:4000/udp/226.226.1.6:1234
-#EXTINF:-1 group-title="Proline1", ТРК Україна
-http://192.168.0.1:4000/udp/226.226.1.8:1234
-#EXTINF:-1 group-title="Proline2", 112 Украина
-http://192.168.0.1:4000/udp/226.226.2.14:1234
-#EXTINF:-1 group-title="Proline2", CNL Ukraine
-http://192.168.0.1:4000/udp/226.226.2.7:1234
-#EXTINF:-1 group-title="Proline2", M2
-http://192.168.0.1:4000/udp/226.226.2.17:1234
-#EXTINF:-1 group-title="Proline2", MAXXI TV
-http://192.168.0.1:4000/udp/226.226.2.9:1234
-#EXTINF:-1 group-title="Proline2", Music Box UA
-http://192.168.0.1:4000/udp/226.226.2.12:1234
-#EXTINF:-1 group-title="Proline2", MІ Lady Television
-http://192.168.0.1:4000/udp/226.226.2.13:1234
-#EXTINF:-1 group-title="Proline2", News One
-http://192.168.0.1:4000/udp/226.226.2.16:1234
-#EXTINF:-1 group-title="Proline2", NewsNetwork
-http://192.168.0.1:4000/udp/226.226.2.32:1234
-#EXTINF:-1 group-title="Proline2", O-TV
-http://192.168.0.1:4000/udp/226.226.2.15:1234
-#EXTINF:-1 group-title="Proline2", OE TV
-http://192.168.0.1:4000/udp/226.226.2.35:1234
-#EXTINF:-1 group-title="Proline2", Pro Все
-http://192.168.0.1:4000/udp/226.226.2.28:1234
-#EXTINF:-1 group-title="Proline2", QTV
-http://192.168.0.1:4000/udp/226.226.2.24:1234
-#EXTINF:-1 group-title="Proline2", RTI
-http://192.168.0.1:4000/udp/226.226.2.34:1234
-#EXTINF:-1 group-title="Proline2", RU Music
-http://192.168.0.1:4000/udp/226.226.2.5:1234
-#EXTINF:-1 group-title="Proline2", UBR
-http://192.168.0.1:4000/udp/226.226.2.23:1234
-#EXTINF:-1 group-title="Proline2", zik
-http://192.168.0.1:4000/udp/226.226.2.30:1234
-#EXTINF:-1 group-title="Proline2", Індиго
-http://192.168.0.1:4000/udp/226.226.2.25:1234
-#EXTINF:-1 group-title="Proline2", Вінтаж
-http://192.168.0.1:4000/udp/226.226.2.26:1234
-#EXTINF:-1 group-title="Proline2", Гамма
-http://192.168.0.1:4000/udp/226.226.2.19:1234
-#EXTINF:-1 group-title="Proline2", Глас
-http://192.168.0.1:4000/udp/226.226.2.20:1234
-#EXTINF:-1 group-title="Proline2", Ескулап
-http://192.168.0.1:4000/udp/226.226.2.27:1234
-#EXTINF:-1 group-title="Proline2", Еспрессо TV
-http://192.168.0.1:4000/udp/226.226.2.6:1234
-#EXTINF:-1 group-title="Proline2", Культура
-http://192.168.0.1:4000/udp/226.226.2.2:1234
-#EXTINF:-1 group-title="Proline2", Львів ТБ
-http://192.168.0.1:4000/udp/226.226.2.31:1234
-#EXTINF:-1 group-title="Proline2", Малятко ТВ
-http://192.168.0.1:4000/udp/226.226.2.37:1234
-#EXTINF:-1 group-title="Proline2", Надія
-http://192.168.0.1:4000/udp/226.226.2.18:1234
-#EXTINF:-1 group-title="Proline2", НЛО ТВ
-http://192.168.0.1:4000/udp/226.226.2.8:1234
-#EXTINF:-1 group-title="Proline2", Перший діловий
-http://192.168.0.1:4000/udp/226.226.2.33:1234
-#EXTINF:-1 group-title="Proline2", Планета (Україна)
-http://192.168.0.1:4000/udp/226.226.2.10:1234
-#EXTINF:-1 group-title="Proline2", Право TV
-http://192.168.0.1:4000/udp/226.226.2.11:1234
-#EXTINF:-1 group-title="Proline2", РАДА
-http://192.168.0.1:4000/udp/226.226.2.1:1234
-#EXTINF:-1 group-title="Proline2", Сонце
-http://192.168.0.1:4000/udp/226.226.2.22:1234
-#EXTINF:-1 group-title="Proline2", Соціальна країна
-http://192.168.0.1:4000/udp/226.226.2.29:1234
-#EXTINF:-1 group-title="Proline2", Телеканал Новин 24
-http://192.168.0.1:4000/udp/226.226.2.36:1234
-#EXTINF:-1 group-title="Proline2", Черноморская телерадиокомпания
-http://192.168.0.1:4000/udp/226.226.2.4:1234
-#EXTINF:-1 group-title="Proline2", ЧП инфо
-http://192.168.0.1:4000/udp/226.226.2.3:1234
-#EXTINF:-1 group-title="Proline2", ЭКО-ТВ
-http://192.168.0.1:4000/udp/226.226.2.21:1234

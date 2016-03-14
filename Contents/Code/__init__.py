@@ -102,8 +102,16 @@ def ListItems(group):
 
 @route(PREFIX + '/createvideoclipobject')
 def CreateVideoClipObject(url, title, thumb, container = False):
+
+    callback = Callback(PlayVideo, url = url)
+
+    if url.startswith('rtmp') and Prefs['rtmp']:
+        stream_url = RTMPVideoURL(url = callback, live = live)
+    else:
+        stream_url = HTTPLiveStreamURL(callback)
+
     vco = VideoClipObject(
-        key = Callback(CreateVideoClipObject, url = url, title = title, thumb = thumb, container = True),
+        key = Callback(CreateVideoClipObject, url = stream_url, title = title, thumb = thumb, container = True),
         #rating_key = url,
         url = url,
         title = title,
@@ -116,7 +124,7 @@ def CreateVideoClipObject(url, title, thumb, container = False):
                 #audio_channels = 2,            # 2, 6
                 parts = [
                     PartObject(
-                        key = GetVideoURL(url = url)
+                        key = stream_url
                     )
                 ],
                 optimized_for_streaming = True
@@ -130,29 +138,9 @@ def CreateVideoClipObject(url, title, thumb, container = False):
         return vco
     return vco
 
-def GetVideoURL(url, live = True):
-    if url.startswith('rtmp') and Prefs['rtmp']:
-        Log.Debug('*' * 80)
-        Log.Debug('* url before processing: %s' % url)
-        #if url.find(' ') > -1:
-        #    playpath = GetAttribute(url, 'playpath', '=', ' ')
-        #    swfurl = GetAttribute(url, 'swfurl', '=', ' ')
-        #    pageurl = GetAttribute(url, 'pageurl', '=', ' ')
-        #    url = url[0:url.find(' ')]
-        #    Log.Debug('* url_after: %s' % RTMPVideoURL(url = url, playpath = playpath, swfurl = swfurl, pageurl = pageurl, live = live))
-        #    Log.Debug('*' * 80)
-        #    return RTMPVideoURL(url = url, playpath = playpath, swfurl = swfurl, pageurl = pageurl, live = live)
-        #else:
-        #    Log.Debug('* url_after: %s' % RTMPVideoURL(url = url, live = live))
-        #    Log.Debug('*' * 80)
-        #    return RTMPVideoURL(url = url, live = live)
-        Log.Debug('* url after processing: %s' % RTMPVideoURL(url = url, live = live))
-        Log.Debug('*' * 80)
-        return RTMPVideoURL(url = url, live = live)
-    #elif url.startswith('mms') and Prefs['mms']:
-    #    return WindowsMediaVideoURL(url = url)
-    else:
-        return HTTPLiveStreamURL(url = url)
+@indirect
+def PlayVideo(url):
+    return IndirectResponse(VideoClipObject, key=url)
 
 def GetThumb(thumb):
     if thumb and thumb.startswith('http'):
